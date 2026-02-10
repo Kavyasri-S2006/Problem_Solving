@@ -29,7 +29,7 @@ class Solution {
         }
      
             int max=temp.val+prev.val;
-            while(temp!=null){
+            while(temp!=null && prev!=null){
                 int n=temp.val+prev.val;
                if(n>max)max=n;
                 temp=temp.next;
