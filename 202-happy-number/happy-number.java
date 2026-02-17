@@ -4,7 +4,7 @@ class Solution {
             return true;
         }
         int count=0;
-       while(n>1&&count<15) {
+       while(n>1&&count<10) {
         int s=0;
         while(n>0){
         int a=n%10;
