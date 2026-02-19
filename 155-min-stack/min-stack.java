@@ -1,6 +1,4 @@
 class MinStack {
-    
-    static int min=0;
     Stack<Integer> stack;
     Stack<Integer> Minstack;
     public MinStack() {
@@ -19,7 +17,6 @@ class MinStack {
         if(stack.peek().equals(Minstack.peek())){
             Minstack.pop();
         }
-        if(stack.isEmpty()) return;
          stack.pop();
     }
     
