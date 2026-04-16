@@ -6,9 +6,9 @@ class Solution {
             nums[ind++]=Math.abs(nums[i]);
         }
         Arrays.sort(nums);
-       
+       int in=0;
         for(int i=0;i<n;i++){
-            nums[i]=(int)Math.pow(nums[i],2);
+            nums[in++]=(int)Math.pow(nums[i],2);
         }
         return nums;
     }
