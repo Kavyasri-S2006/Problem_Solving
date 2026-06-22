@@ -4,13 +4,8 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             int pd=1;
             for(int j=i;j<nums.length;j++){
-                if(pd<k){
-                if(i==j)pd*=nums[j];
-                else{
-                    pd*=nums[j];
-                }
+                if(pd<k)  pd*=nums[j];
                 if(pd<k)count++;
-                }
                 else break;
             }
         }
