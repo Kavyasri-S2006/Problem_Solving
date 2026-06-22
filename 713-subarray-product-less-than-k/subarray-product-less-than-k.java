@@ -11,6 +11,7 @@ class Solution {
                 }
                 if(pd<k)count++;
                 }
+                else break;
             }
         }
         return count;
