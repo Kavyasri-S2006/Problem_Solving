@@ -1,0 +1,13 @@
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        
+     Map<Integer,Integer> map=new HashMap<>();
+     for(int i:nums){
+        map.put(i,map.getOrDefault(i,0)+1);
+     } 
+     for(int i:nums) {
+        if(map.get(i)<2)return i;
+     }
+    return 0;
+    }
+}
