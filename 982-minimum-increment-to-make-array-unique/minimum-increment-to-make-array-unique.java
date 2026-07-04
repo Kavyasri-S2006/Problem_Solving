@@ -1,0 +1,15 @@
+class Solution {
+    public int minIncrementForUnique(int[] nums) {
+        Arrays.sort(nums);
+       // int[] arr=new int[nums.length];
+        int count=0;
+        //arr[0]=nums[0];
+        for(int i=1;i<nums.length;i++){
+                if(nums[i]<=nums[i-1]){
+                    count+=nums[i-1]+1-nums[i];
+                    nums[i]=nums[i-1]+1;
+                }
+        }
+        return count;
+    }
+}
