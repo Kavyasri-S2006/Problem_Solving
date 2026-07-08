@@ -11,7 +11,7 @@ class Solution {
       for(int i= position.length-1;i>=0;i--){
         double dis=target-position[i];
         double sp=map.get(position[i]);
-            double t=(double)(dis/sp);
+            double t=(dis/sp);
             if(t>max){
                 count++;
                 max=t;
