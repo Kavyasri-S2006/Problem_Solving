@@ -8,7 +8,7 @@ class Solution {
         map.put(position[i],speed[i]);
       } 
       Arrays.sort(position);
-      for(int i= position.length-1;i>=0;i--){
+      for(int i= n-1;i>=0;i--){
         double dis=target-position[i];
         double sp=map.get(position[i]);
             double t=(dis/sp);
